@@ -147,7 +147,7 @@ const Home = () => {
               </button>
             </Link>
 
-            <Link to="/project">
+            <Link to="/about">
               <button className="px-8 py-3 rounded-lg bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-semibold shadow-xl hover:shadow-2xl hover:shadow-blue-500/50 transform hover:scale-105 transition-all duration-300 flex items-center gap-2">
                 Explore  Lab
                 <Rocket size={18} />

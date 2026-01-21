@@ -9,7 +9,7 @@ import Startup from "./pages/Startup";
 import About from "./pages/About";
 // import Faltu from "./pages/faltu";
 
-export const ServerURL = "http://localhost:3000";
+export const ServerURL = "https://tinkering-lab-2081.onrender.com";
 
 const App = () => {
 

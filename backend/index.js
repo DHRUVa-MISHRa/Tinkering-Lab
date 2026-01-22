@@ -20,7 +20,7 @@ app.use(cookieParser())
 // }))
 
 app.use(cors({
-    origin: "http://localhost:5173" || "https://tinkering-lab-1-kxzt.onrender.com",
+    origin:  "https://tinkering-lab-1-kxzt.onrender.com",
     credentials: true,
 }))
 

@@ -37,12 +37,22 @@ const Admin = () => {
       fd.append("stream", e.target.stream.value);
       fd.append("image", memberImg);
 
-      await axios.post(`${ServerURL}/api/member/addmember`, fd);
-      alert("Member added");
+
+        // ✅ Print all FormData values
+    // for (let [key, value] of fd.entries()) {
+    //   console.log(key, value);
+    // }
+
+      const res = await axios.post(`${ServerURL}/api/member/addmember`, fd , {withCredentials:true});
+      if(res){
+         alert("Member added");
+
+      }
+
       e.target.reset();
       setMemberPreview(null);
     } catch (error) {
-      alert("Error adding member");
+      alert("Server Error");
       console.error(error);
     } finally {
       setMemberLoading(false);

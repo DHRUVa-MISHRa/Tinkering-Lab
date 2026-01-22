@@ -3,19 +3,29 @@ import MemberModel from "../models/member.model.js";
 
 export const addMember = async(req , res)=>{
     try {
-        const{name , role , stream , year , image , work} = req.body;
+
+        // console.log("entry")
+        const{name , role , stream , year , work} = req.body;
         if(!name || !role || !stream || !year ){
             return res.status(400).json({message:"required neccesary fields"});
         }
+
+        if(!req.file){
+            return res.status(400).json({message:"Image is required"});
+        }
+
+        console.log("this is request",name);
 
         let img;
         if(req.file){
             img = await uplodOnCloudinary(req.file.path);
         }
         const member = await MemberModel.create({
-            name, role , stream , image:img , work
+            name, role , stream , year ,  image:img , work
         })
 
+
+        console.log(member);
         return res.status(200).json({message:"Member add successFully.." , data:member});
 
     } catch (error) {

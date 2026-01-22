@@ -41,13 +41,16 @@ const Navbar = () => {
     )
   }, [])
 
+  const status = "dev";
+
   const links = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
     { name: "Projects", path: "/projects" },
     { name: "Startups", path: "/startups" },
     { name: "Members", path: "/members" },
-    // { name: "Admin", path: "/admin" },
+    ...(status === "dev" ? [{ name: "Admin", path: "/admin" }] : [])
+    // ,
   ]
 
   return (

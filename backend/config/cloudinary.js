@@ -19,8 +19,13 @@ const uplodOnCloudinary = async (filepath) => {
 
     return res.secure_url;
   } catch (error) {
-    fs.unlinkSync(filepath);
+    try {
+      fs.unlinkSync(filepath);
+    } catch (e) {
+      // File might not exist
+    }
     console.log("cloudinary error", error);
+    throw error;
   }
 };
 

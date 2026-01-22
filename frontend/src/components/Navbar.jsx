@@ -41,7 +41,7 @@ const Navbar = () => {
     )
   }, [])
 
-  const status = "dev";
+  const status = "pro";
 
   const links = [
     { name: "Home", path: "/" },

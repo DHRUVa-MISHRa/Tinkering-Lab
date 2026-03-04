@@ -35,7 +35,7 @@ export default function Member() {
           </div>
 
           <h1 className="text-5xl sm:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-400 to-indigo-400">
-            Lab Sreejan Committee
+            Lab  Srijan  Committee
           </h1>
 
           <p className="text-gray-300 text-lg">

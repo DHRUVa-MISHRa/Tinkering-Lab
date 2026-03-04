@@ -73,7 +73,7 @@ const Navbar = () => {
           </div>
           <div className="hidden sm:block">
             <h1 className="text-xl font-bold bg-gradient-to-r from-white to-slate-300 bg-clip-text text-transparent">
-              Tinkering Lab
+              Tinker’s Lab
             </h1>
             <p className="text-xs text-purple-400 font-semibold -mt-1">Innovation Hub</p>
           </div>

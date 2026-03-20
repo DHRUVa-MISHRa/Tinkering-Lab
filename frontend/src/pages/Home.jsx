@@ -443,7 +443,7 @@ const Home = () => {
               © 2024 Tinker’s Lab. All rights reserved.
             </p>
             <p className="text-sm text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 font-semibold">
-              Developed & Designed by Nasirulla (BCA)
+              Developed & Designed by Nasirulla And Dhruv (BCA/MCA)
             </p>
           </div>
         </div>

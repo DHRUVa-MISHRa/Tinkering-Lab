@@ -41,7 +41,7 @@ const Navbar = () => {
     )
   }, [])
 
-  const status = "pro";
+  const status = "dev";
 
   const links = [
     { name: "Home", path: "/" },
@@ -81,7 +81,7 @@ const Navbar = () => {
 
         {/* DESKTOP MENU */}
         <ul className="hidden lg:flex items-center gap-1">
-          {links.map((link, idx) => (
+          {links.map((link) => (
             <li key={link.name}>
               <NavLink
                 to={link.path}

@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useRef } from "react";
+import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
@@ -9,8 +9,8 @@ import Startup from "./pages/Startup";
 import About from "./pages/About";
 // import Faltu from "./pages/faltu";
 
-// export const ServerURL =  "http://localhost:3000";
-export const ServerURL =  "https://tinkering-lab-2081.onrender.com";
+export const ServerURL =  "http://localhost:3000";
+// export const ServerURL =  "https://tinkering-lab-2081.onrender.com";
 
 const App = () => {
 
